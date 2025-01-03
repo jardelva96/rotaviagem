@@ -2,6 +2,15 @@
 
 ![React](https://img.shields.io/badge/React-19.0.0-blue)
 ![Axios](https://img.shields.io/badge/Axios-1.7.9-blueviolet)
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)  
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15.x-blue)  
+![HTML](https://img.shields.io/badge/HTML-5.0-red)  
+![CSS](https://img.shields.io/badge/CSS-3.0-blue)  
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)  
+![React Router](https://img.shields.io/badge/React%20Router-6.28.1-orange)  
+![VS Code](https://img.shields.io/badge/VS%20Code-1.80.x-purple)  
+![C#](https://img.shields.io/badge/C%23-10.0-blue)  
+![.NET](https://img.shields.io/badge/.NET-7.0-purple)  
 
 ## Sobre o Projeto
 
