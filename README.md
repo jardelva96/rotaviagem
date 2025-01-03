@@ -75,7 +75,6 @@ RotaViagem é um sistema para gerenciar rotas de viagem, onde é possível adici
 
 ```
 rotaviagem
-├── .gitignore
 ├── README.md
 ├── backend
 │   │   ├── Controllers
@@ -119,7 +118,6 @@ rotaviagem
 │   │       └── Navigation.css
 │   ├── package.json
 │   ├── package-lock.json
-│── README.md (opcional)
 ├── swagger.json
 └── RotaViagem.postman_collection.json
 
