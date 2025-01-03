@@ -67,7 +67,7 @@ RotaViagem é um sistema para gerenciar rotas de viagem, onde é possível adici
 ## Testes
 
 
-1. Acesse o Swagger em [http://localhost:5235/swagger/index.html](http://localhost:5283).
+1. Acesse o Swagger em [http://localhost:5283/swagger/index.html](http://localhost:5283).
 
 2. a um arquivo com nome RotaViagem.postman_collection para que seja testado os endpoints. 
 
