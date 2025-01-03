@@ -77,7 +77,7 @@ RotaViagem é um sistema para gerenciar rotas de viagem, onde é possível adici
 rotaviagem
 ├── .gitignore
 ├── README.md
-├── RotaViagem.Api
+├── backend
 │   │   ├── Controllers
 │   │   │   └── RotasController.cs
 │   │   ├── Models
