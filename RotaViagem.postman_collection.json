@@ -1,0 +1,98 @@
+{
+    "info": {
+      "name": "RotaViagem API",
+      "description": "Coleção de testes para a API RotaViagem",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Listar todas as rotas",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5283/api/Rota",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5283",
+            "path": ["api", "Rota"]
+          }
+        }
+      },
+      {
+        "name": "Buscar rota por ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5283/api/Rota/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5283",
+            "path": ["api", "Rota", "1"]
+          }
+        }
+      },
+      {
+        "name": "Criar nova rota",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"origem\": \"GRU\",\n  \"destino\": \"CDG\",\n  \"valor\": 120\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5283/api/Rota",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5283",
+            "path": ["api", "Rota"]
+          }
+        }
+      },
+      {
+        "name": "Atualizar rota existente",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"id\": 1,\n  \"origem\": \"GRU\",\n  \"destino\": \"SCL\",\n  \"valor\": 150\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5283/api/Rota/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5283",
+            "path": ["api", "Rota", "1"]
+          }
+        }
+      },
+      {
+        "name": "Excluir rota",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5283/api/Rota/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5283",
+            "path": ["api", "Rota", "1"]
+          }
+        }
+      }
+    ]
+  }
+  

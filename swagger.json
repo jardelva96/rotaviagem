@@ -1,0 +1,134 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "RotaViagem API",
+      "description": "API para gerenciamento de rotas de viagem"
+    },
+    "host": "localhost:5283",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/Rota": {
+        "get": {
+          "summary": "Listar todas as rotas",
+          "responses": {
+            "200": {
+              "description": "Lista de rotas"
+            }
+          }
+        },
+        "post": {
+          "summary": "Criar nova rota",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "origem": {
+                    "type": "string"
+                  },
+                  "destino": {
+                    "type": "string"
+                  },
+                  "valor": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Rota criada com sucesso"
+            }
+          }
+        }
+      },
+      "/Rota/{id}": {
+        "get": {
+          "summary": "Buscar rota por ID",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "type": "integer"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Rota encontrada"
+            },
+            "404": {
+              "description": "Rota não encontrada"
+            }
+          }
+        },
+        "put": {
+          "summary": "Atualizar rota",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "type": "integer"
+            },
+            {
+              "in": "body",
+              "name": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "origem": {
+                    "type": "string"
+                  },
+                  "destino": {
+                    "type": "string"
+                  },
+                  "valor": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Rota atualizada com sucesso"
+            },
+            "404": {
+              "description": "Rota não encontrada"
+            }
+          }
+        },
+        "delete": {
+          "summary": "Excluir rota",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "type": "integer"
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Rota excluída com sucesso"
+            },
+            "404": {
+              "description": "Rota não encontrada"
+            }
+          }
+        }
+      }
+    }
+  }
+  
