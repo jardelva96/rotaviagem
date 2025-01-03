@@ -13,10 +13,10 @@
 ![.NET](https://img.shields.io/badge/.NET-7.0-purple)  
 
 ## Sobre o Projeto
-- Se todos os arquivos já estão configurados e as instalações necessárias foram realizadas, você só precisará executar os comandos no PowerShell para iniciar o projeto.
 RotaViagem é um sistema para gerenciar rotas de viagem, onde é possível adicionar, consultar e editar rotas utilizando um frontend desenvolvido em React e comunicação com uma API REST.
 
 ## Funcionalidades
+- Se todos os arquivos já estão configurados e as instalações necessárias foram realizadas, você só precisará executar os comandos no PowerShell para iniciar o projeto.
 
 - Adicionar novas rotas com origem, destino e valor.
 - Consultar a melhor rota com base em origem e destino.
