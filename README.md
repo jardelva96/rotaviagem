@@ -49,7 +49,7 @@ RotaViagem é um sistema para gerenciar rotas de viagem, onde é possível adici
 
 2. Inicie o servidor de desenvolvimento:
    ```bash
-   cd rotaviagemfrontend
+   cd frontend
    npm start
    ```
 
@@ -58,7 +58,7 @@ RotaViagem é um sistema para gerenciar rotas de viagem, onde é possível adici
 4. Inicie o Backend:
    ```bash
    cd rotaviagem
-   cd RotaViagemAPI
+   cd backend
    dotnet run
    ```
 
