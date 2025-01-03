@@ -1,4 +1,4 @@
-# RotaViagem Frontend
+# RotaViagem
 
 ![React](https://img.shields.io/badge/React-19.0.0-blue)
 ![Axios](https://img.shields.io/badge/Axios-1.7.9-blueviolet)
