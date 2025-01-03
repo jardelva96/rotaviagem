@@ -30,58 +30,88 @@ RotaViagem é um sistema para gerenciar rotas de viagem, onde é possível adici
 - Node.js 16 ou superior
 - npm ou yarn
 
-## Instalação
+## Instalação FRONT E BACK
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/rotaviagem-frontend.git
-   cd rotaviagem-frontend
+   git clone https://github.com/seuusuario/rotaviagem.git
+   cd rotaviagem
    ```
 
-2. Instale as dependências:
+2. Inicie o servidor de desenvolvimento:
    ```bash
-   npm install
-   ```
-
-3. Configure a API Base URL:
-   Edite o arquivo `src/services/api.js` e ajuste a URL base para a API backend:
-   ```javascript
-   import axios from 'axios';
-
-   const api = axios.create({
-       baseURL: 'http://localhost:5000/api', // Altere conforme necessário
-   });
-
-   export default api;
-   ```
-
-4. Inicie o servidor de desenvolvimento:
-   ```bash
+   cd rotaviagemfrontend
    npm start
    ```
 
-5. Acesse o aplicativo no navegador em [http://localhost:3000](http://localhost:3000).
+3. Acesse o aplicativo no navegador em [http://localhost:3000](http://localhost:3000).
+----------------------------------------------
+4. Inicie o Backend:
+   ```bash
+   cd rotaviagem
+   cd RotaViagemAPI
+   dotnet run
+   ```
+
+5. Acesse o aplicativo no navegador em [http://localhost:5283](http://localhost:5283).
 
 ## Testes
 
 
-3. Acesse o aplicativo em [http://localhost:3000](http://localhost:3000).
+1. Acesse o Swagger em [http://localhost:5235/swagger/index.html](http://localhost:5283).
 
-
+2. a um arquivo com nome RotaViagem.postman_collection para que seja testado os endpoints. 
 
 ## Estrutura de Diretórios
 
 ```
-rotaviagem-frontend/
-├── src/
-│   ├── components/     # Componentes reutilizáveis
-│   ├── pages/          # Páginas principais do aplicativo
-│   ├── services/       # Configurações de API e utilitários
-│   ├── App.js          # Componente principal
-│   └── index.js        # Ponto de entrada
-├── public/             # Arquivos públicos
-├── .env                # Variáveis de ambiente
-├── Dockerfile          # Configuração para container
-├── package.json        # Dependências e scripts do projeto
-└── README.md           # Documentação do projeto
+rotaviagem
+├── .gitignore
+├── README.md
+├── RotaViagem.Api
+│   │   ├── Controllers
+│   │   │   └── RotasController.cs
+│   │   ├── Models
+│   │   │   └── Rota.cs
+│   │   ├── Migrations
+│   │   │   └── <migrations_files>.cs
+│   │   ├── Data
+│   │   │   └── AppDbContext.cs
+│   │   ├── Program.cs
+│   │   ├── Startup.cs
+│   │   ├── appsettings.json
+│   │   ├── appsettings.Development.json
+│   │   └── RotaViagem.Api.csproj
+│   ├── RotaViagem.sln
+├── frontend
+│   ├── public
+│   │   ├── index.html
+│   │   └── manifest.json
+│   ├── src
+│   │   ├── assets
+│   │   │   └── logo.png
+│   │   ├── components
+│   │   │   ├── Header.js
+│   │   │   ├── Footer.js
+│   │   │   └── Navigation.js
+│   │   ├── pages
+│   │   │   ├── Home.js
+│   │   │   ├── AddRota.js
+│   │   │   ├── ConsultaRotas.js
+│   │   │   └── NotFound.js
+│   │   ├── services
+│   │   │   └── api.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── styles
+│   │       ├── App.css
+│   │       ├── Header.css
+│   │       ├── Footer.css
+│   │       └── Navigation.css
+│   ├── package.json
+│   ├── package-lock.json
+│── README.md (opcional)
+├── swagger.json
+└── RotaViagem.postman_collection.json
+
 ```
